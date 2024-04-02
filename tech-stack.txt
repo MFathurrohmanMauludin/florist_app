@@ -1,0 +1,6 @@
+- framer motion
+- daisyUI
+- Tailwin CSS
+- Typescript
+- NextJS14
+- NPM
