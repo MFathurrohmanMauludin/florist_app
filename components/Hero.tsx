@@ -1,6 +1,6 @@
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Accordion, AccordionItem, Button } from '@nextui-org/react';
+import { Accordion, AccordionItem, Button, Link } from '@nextui-org/react';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -10,10 +10,10 @@ export default function Hero() {
 
     return (
         <>
-            <div className="relative w-full px-8 py-6">
+            <div className="relative w-full px-8 pb-6 pt-24">
                 <div className="flex justify-between">
                     {/* detail product */}
-                    <div className="flex flex-col self-center w-full max-w-[400px]">
+                    <div className="flex flex-col self-center w-full pr-4">
                         <h1 className='text-[42px] font-semibold leading-snug'>Minimal red tulip flower vase</h1>
                         <span className='text-[32px] font-normal pt-4 pb-6'>$18.99</span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -27,12 +27,12 @@ export default function Hero() {
                     </div>
 
                     <div
-                        className="flex flex-col items-center w-[400px] h-[500px] relative drop-shadow-md"
+                        className="flex flex-col items-center w-full h-[500px] relative drop-shadow-xl -z-10"
                         style={{ backgroundImage: `url('./Rectangle.png')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
                     >
                         {/* image product */}
                         <Image
-                            className='absolute bottom-0 object-cover z-0'
+                            className='absolute bottom-[58px] left-[-5px] object-cover z-0 scale-125'
                             src={'/Minimal-red-tulip-flower-vase.webp'}
                             width={400}
                             height={400}
@@ -44,15 +44,13 @@ export default function Hero() {
                             width={400}
                             height={400}
                             alt={'mask line'} />
-
-
                     </div>
 
-                    <div className="flex flex-col flex-1 justify-between pl-4">
+                    <div className="flex flex-col justify-between w-full pl-4">
                         {/* button prev & next */}
                         <div className="flex items-center gap-2">
                             <Button
-                                className='bg-white'
+                                className='bg-white text-gray-500'
                                 startContent={<FontAwesomeIcon icon={faArrowLeft} />}
                                 radius='full'
                                 isIconOnly
@@ -67,18 +65,31 @@ export default function Hero() {
 
                         {/* accordion */}
                         <Accordion>
-                            <AccordionItem key="1" aria-label="Description" title="Description">
+                            <AccordionItem classNames={{ content: '!bg-white', base: '!bg-[#fff1] backdrop-blur-sm' }} key="1" aria-label="Description" title="Description">
                                 {defaultContent}
                             </AccordionItem>
-                            <AccordionItem key="2" aria-label="Ingredients" title="Ingredients">
+                            <AccordionItem classNames={{ content: '!bg-white', base: '!bg-[#fff1] backdrop-blur-sm' }} key="2" aria-label="Ingredients" title="Ingredients">
                                 {defaultContent}
                             </AccordionItem>
-                            <AccordionItem key="3" aria-label="Testimonials" title="Testimonials">
+                            <AccordionItem classNames={{ content: '!bg-white', base: '!bg-[#fff1] backdrop-blur-sm' }} key="3" aria-label="Testimonials" title="Testimonials">
                                 {defaultContent}
                             </AccordionItem>
                         </Accordion>
                     </div>
                 </div>
+
+                <div className="flex justify-center py-8">
+                    <Link href='#get-started'>
+                        <Image src={'./ArrowDown.svg'} width={24} height={24} alt={'btn cta'} />
+                    </Link>
+                </div>
+
+                {/* leaf */}
+                <Image className='absolute left-0 bottom-0 -z-10' src='./Leaf.svg' width={200} height={300} alt='flower pot' />
+
+
+                {/* flower pot */}
+                <Image className='absolute right-0 top-0 -z-10' src='./FlowerPot.svg' width={200} height={300} alt='flower pot' />
             </div>
         </>
     )

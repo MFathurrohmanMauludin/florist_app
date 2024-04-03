@@ -1,5 +1,3 @@
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from '@nextui-org/link';
 import { Button } from '@nextui-org/react';
 import iconBuy from '../public/Buy.svg';

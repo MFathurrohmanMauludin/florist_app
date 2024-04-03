@@ -9,7 +9,14 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        'xl': [
+          '0 20px 13px rgb(0 0 0 / 0.2)',
+          '0 8px 5px rgb(0 0 0 / 0.1)'
+        ]
+      }
+    },
     screens: {
       'xs': { 'max': '480px' },
       'sm': { 'max': '640px' },
