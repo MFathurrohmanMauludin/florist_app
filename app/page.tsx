@@ -1,6 +1,6 @@
 'use client';
 
-import Hero from "@/components/Hero";
+import Hero from "@/components/section/Hero";
 import BestSeller from "@/components/section/BestSeller";
 
 export default function Home() {
