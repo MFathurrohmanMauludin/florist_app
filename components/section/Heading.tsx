@@ -8,7 +8,7 @@ export default function Heading(getData: Props) {
     return (
         <>
             <div className="flex justify-start px-8">
-                <span className='text-lg capitalize'>{getData.title}</span>
+                <span className='text-xl capitalize'>{getData.title}</span>
             </div>
         </>
     )

@@ -1,8 +1,8 @@
-const flowers = [
+const flowers = () => [
     {
-        name: 'pink rose bouquet',
+        title: 'pink rose bouquet',
         imgUrl: 'https://tokyoflora.com/wp-content/uploads/2022/02/fbq-pn-2028.jpg',
-        like: 15,
+        likes: 15,
         size: {
             small: {
                 price: 350,
@@ -19,13 +19,12 @@ const flowers = [
         },
         sale: 129,
         discount: 0,
-        category: 'bouquet',
-        theme: 'birthday'
+        category: ['bouquet', 'orchid', 'wedding', 'anniversary'],
     },
     {
-        name: 'fifteen red rose bouquet',
+        title: 'fifteen red rose bouquet',
         imgUrl: 'https://tokyoflora.com/wp-content/uploads/2022/03/fbq-rd-2065.png',
-        like: 259,
+        likes: 259,
         size: {
             small: {
                 price: 600,
@@ -42,24 +41,73 @@ const flowers = [
         },
         sale: 194,
         discount: 0,
-        category: 'bouquet',
+        category: ['bouquet', 'orchid', 'wedding', 'anniversary'],
     },
     {
-        name: 'Normal Grade White Orchid 3',
+        title: 'Normal Grade White Orchid 3',
         imgUrl: 'https://tokyoflora.com/wp-content/uploads/2019/01/jp-orch-1539.jpg',
-        like: 15,
+        likes: 15,
         price: 1500,
-        size: { 'small': 10, 'medium': 15, 'big': 20 },
+        size: {
+            small: {
+                price: 600,
+                stalk: 10
+            },
+            medium: {
+                price: 750,
+                stalk: 15
+            },
+            large: {
+                price: 800,
+                stalk: 20
+            },
+        },
         sale: 249,
         discount: 0,
         category: ['pot', 'orchid', 'wedding'],
     },
     {
-        name: 'Areca Palm Tree',
+        title: 'Areca Palm Tree',
         imgUrl: 'https://tokyoflora.com/wp-content/uploads/2022/02/plt-gr-2209.jpg',
-        like: 245,
+        likes: 245,
         price: 350,
-        size: { 'small': 10, 'medium': 15, 'big': 20 },
+        size: {
+            small: {
+                price: 600,
+                stalk: 10
+            },
+            medium: {
+                price: 750,
+                stalk: 15
+            },
+            large: {
+                price: 800,
+                stalk: 20
+            },
+        },
+        sale: 249,
+        discount: 0,
+        category: ['pot', 'orchid', 'wedding'],
+    },
+    {
+        title: 'Lovely Pink Arrangement',
+        imgUrl: 'https://tokyoflora.com/wp-content/uploads/2022/02/fbs-pn-2110.jpg',
+        likes: 245,
+        price: 350,
+        size: {
+            small: {
+                price: 600,
+                stalk: 10
+            },
+            medium: {
+                price: 750,
+                stalk: 15
+            },
+            large: {
+                price: 800,
+                stalk: 20
+            },
+        },
         sale: 249,
         discount: 0,
         category: ['pot', 'orchid', 'wedding'],

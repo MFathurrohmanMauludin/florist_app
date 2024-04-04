@@ -1,6 +1,8 @@
 import type { Config } from "tailwindcss";
 import { nextui } from "@nextui-org/react";
 
+/** @type {import('tailwindcss').Config} */
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,6 +11,25 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    screens: {
+      '2xl': { 'max': '1535px' },
+      // => @media (max-width: 1535px) { ... }
+
+      'xl': { 'max': '1279px' },
+      // => @media (max-width: 1279px) { ... }
+
+      'lg': { 'max': '1023px' },
+      // => @media (max-width: 1023px) { ... }
+
+      'md': { 'max': '767px' },
+      // => @media (max-width: 767px) { ... }
+
+      'sm': { 'max': '639px' },
+      // => @media (max-width: 639px) { ... }
+
+      'xs': { 'max': '480px' },
+      // => @media (max-width: 480px) { ... }
+    },
     extend: {
       dropShadow: {
         'xl': [
@@ -17,14 +38,6 @@ const config: Config = {
         ]
       }
     },
-    screens: {
-      'xs': { 'max': '480px' },
-      'sm': { 'max': '640px' },
-      'md': { 'max': '768px' },
-      'lg': { 'max': '1024px' },
-      'xl': { 'max': '1280px' },
-      '2xl': { 'max': '1536px' },
-    }
   },
   darkMode: "class",
   plugins: [nextui()]
