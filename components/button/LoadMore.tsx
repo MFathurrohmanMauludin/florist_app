@@ -10,7 +10,7 @@ export default function LoadMore(getData: Props) {
             <div className="flex flex-row items-center gap-x-4 px-8">
                 <div className="flex grow h-[2px] bg-gray-600/30 rounded" />
                 <Button
-                    className="capitalize w-full max-w-[200px] hover:!bg-black hover:text-white"
+                    className="capitalize w-full max-w-[200px] hover:!bg-black hover:text-white tracking-wide"
                     color="default"
                     variant="light"
                     as={Link}
