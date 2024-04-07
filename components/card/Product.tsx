@@ -41,6 +41,9 @@ function Product(getData: Props) {
                         {
                             getData.data.category.slice(0, 3).map((category: any, index: any) =>
                                 <Chip
+                                    className='hover:!bg-gray-950 hover:text-white'
+                                    as={Link}
+                                    href={'#'}
                                     variant="flat"
                                     size='sm'
                                     key={index}
