@@ -1,4 +1,5 @@
 import { Avatar, Card, CardBody, CardFooter, Chip, Image, Link } from '@nextui-org/react';
+import AddToCart from '../button/AddToCart';
 
 interface Props {
     data: {
@@ -52,6 +53,10 @@ function Product(getData: Props) {
                                 </Chip>
                             )
                         }
+                    </div>
+
+                    <div className="flex self-end mt-4">
+                        <AddToCart />
                     </div>
                 </CardFooter>
             </Card>
