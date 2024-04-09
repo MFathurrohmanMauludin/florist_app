@@ -4,7 +4,7 @@ interface Props {
     url: string;
 }
 
-export default function LoadMore(getData: Props) {
+export default function SeeMore(getData: Props) {
     return (
         <>
             <div className="flex flex-row items-center gap-x-4 px-8">
@@ -17,7 +17,7 @@ export default function LoadMore(getData: Props) {
                     href={getData.url}
                     radius="full"
                     size="md">
-                    load more
+                    see more
                 </Button>
                 <div className="flex grow h-[2px] bg-gray-600/30 rounded" />
             </div>

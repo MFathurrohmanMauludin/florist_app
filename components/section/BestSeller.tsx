@@ -1,5 +1,5 @@
 import React from 'react'
-import LoadMore from '../button/LoadMore'
+import SeeMore from '../button/SeeMore'
 import Heading from './Heading'
 import Product from '../card/Product'
 import { flowers } from '@/app/api/_data'
@@ -23,7 +23,7 @@ export default function BestSeller() {
                     )
                 }
             </div>
-            <LoadMore url={'#best-seller'} />
+            <SeeMore url={'#best-seller'} />
         </div>
     )
 }

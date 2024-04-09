@@ -1,5 +1,7 @@
-import { Avatar, Card, CardBody, CardFooter, Chip, Image, Link } from '@nextui-org/react';
+import { Card, CardFooter, Chip, Image, Link } from '@nextui-org/react';
 import AddToCart from '../button/AddToCart';
+import LikeButton from '../button/Like';
+import CommentButton from '../button/Comment';
 
 interface Props {
     data: {
@@ -35,8 +37,11 @@ function Product(getData: Props) {
                 <CardFooter className="flex flex-col items-start text-left text-small xs:p-2">
                     <span className='line-clamp-1 text-lg font-medium capitalize'>{getData.data.title}
                     </span>
-                    <div className="text-default-500">
-                        ${getData.data.size.small.price} - ${getData.data.size.large.price}
+                    <div className="flex items-center">
+                        <div className="text-default-500">
+                            ${getData.data.size.small.price} - ${getData.data.size.large.price}
+                        </div>
+                        <Chip size="sm">{getData.data.discount}</Chip>
                     </div>
                     <div className="flex flex-wrap justify-start gap-2 mt-3">
                         {
@@ -55,7 +60,11 @@ function Product(getData: Props) {
                         }
                     </div>
 
-                    <div className="flex self-end mt-4">
+                    <div className="flex justify-between mt-4">
+                        <div className="flex items-center gap-x-1">
+                            <LikeButton />
+                            <CommentButton />
+                        </div>
                         <AddToCart />
                     </div>
                 </CardFooter>

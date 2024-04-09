@@ -63,7 +63,7 @@ const flowers = () => [
             },
         },
         sale: 249,
-        discount: 0,
+        discount: 20,
         category: ['pot', 'orchid', 'wedding'],
     },
     {
@@ -109,7 +109,7 @@ const flowers = () => [
             },
         },
         sale: 249,
-        discount: 0,
+        discount: 30,
         category: ['pot', 'orchid', 'wedding'],
     },
 ]

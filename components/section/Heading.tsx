@@ -17,7 +17,7 @@ export default function Heading(getData: Props) {
 
     return (
         <>
-            <div className={`flex justify-start gap-x-2 px-8 py-2 ${getData.colorBackground} ${getData.colorText} w-fit border-l-4 ${getData.colorBorder}`}>
+            <div className={`flex items-center justify-start gap-x-2 px-8 py-2 ${getData.colorBackground} ${getData.colorText} w-fit border-l-4 ${getData.colorBorder}`}>
                 {
                     getData.isIcon ?
                         <FontAwesomeIcon icon={icon[getData.icon]} fontSize={24} />

@@ -1,3 +1,5 @@
+'use client'
+
 import { Button, Link } from '@nextui-org/react'
 
 export default function BtnAddToCart() {
