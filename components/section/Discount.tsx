@@ -6,6 +6,8 @@ import { flowers } from '@/app/api/_data'
 
 export default function Discount() {
     const data = flowers();
+    const filter = data.filter((data) => data.discount > 0);
+
     return (
         <div className='space-y-6 my-10'>
             <Heading
@@ -18,7 +20,7 @@ export default function Discount() {
             />
             <div className="grid grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 px-8 md:px-6 xs:px-4">
                 {
-                    data.map((flower: any, index) =>
+                    filter.map((flower: any, index) =>
                         <Product data={flower} index={index} key={index} />
                     )
                 }
