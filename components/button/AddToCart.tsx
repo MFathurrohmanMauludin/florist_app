@@ -1,9 +1,10 @@
-import { Button } from '@nextui-org/react'
-import React from 'react'
+import { Button, Link } from '@nextui-org/react'
 
 export default function BtnAddToCart() {
     return (
         <Button
+            as={Link}
+            href='#'
             className='capitalize hover:!bg-black hover:text-white'
             variant='light'
             color='default'
