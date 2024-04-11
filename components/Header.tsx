@@ -26,7 +26,7 @@ export default function Header() {
         <>
             <div className="flex items-center justify-between px-8 py-5">
                 {/* logo */}
-                <a href="#" className='text-lg'>Flower Go</a>
+                <a href="#" className='text-lg'>Florist Go</a>
 
                 {/* nav-center */}
                 <div className="flex items-center xs:hidden gap-x-[48px]">

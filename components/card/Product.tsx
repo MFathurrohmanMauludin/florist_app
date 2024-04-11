@@ -21,6 +21,7 @@ function Product(getData: Props) {
     return (
         <>
             <Card
+                className='flex justify-between'
                 shadow="sm"
                 key={getData.index}
                 onPress={() => console.log("item pressed")}
@@ -62,7 +63,7 @@ function Product(getData: Props) {
                         {
                             getData.data.category.slice(0, 3).map((category: any, index: any) =>
                                 <Chip
-                                    className='hover:!bg-gray-950 hover:text-white'
+                                    className='hover:!bg-gray-950 hover:text-white tracking-wide'
                                     as={Link}
                                     href={'#'}
                                     variant="flat"
@@ -75,7 +76,7 @@ function Product(getData: Props) {
                         }
                     </div>
 
-                    <div className="flex justify-between mt-4">
+                    <div className="w-full flex justify-between mt-4">
                         <div className="flex items-center gap-x-1">
                             <LikeButton />
                             <CommentButton />

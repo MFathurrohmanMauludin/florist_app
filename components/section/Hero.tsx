@@ -10,8 +10,8 @@ export default function Hero() {
 
     return (
         <>
-            <div className="relative w-full px-8 pb-6 pt-24">
-                <div className="flex justify-between">
+            <div className="relative w-full px-8 xs:px-4 pb-6 pt-24">
+                <div className="flex justify-between xs:flex-col md:flex-col xs:gap-y-8 md:gap-y-8">
                     {/* detail product */}
                     <div className="flex flex-col self-center w-full pr-4">
                         <h1 className='text-[42px] font-semibold leading-snug'>Minimal red tulip flower vase</h1>
@@ -27,12 +27,12 @@ export default function Hero() {
                     </div>
 
                     <div
-                        className="flex flex-col items-center w-full h-[500px] relative drop-shadow-xl -z-10"
-                        style={{ backgroundImage: `url('./Rectangle.png')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}
+                        className="flex flex-col items-center xs:bg-contain w-full h-[500px] relative drop-shadow-xl -z-10"
+                        style={{ backgroundImage: `url('./Rectangle.png')`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'top' }}
                     >
                         {/* image product */}
                         <Image
-                            className='absolute bottom-[58px] left-[-5px] object-cover z-0 scale-125'
+                            className='absolute bottom-[58px] lg:bottom-0 xs:bottom-0  z-0 scale-125 xs:scale-100 lg:scale-100'
                             src={'/Minimal-red-tulip-flower-vase.webp'}
                             width={400}
                             height={400}
@@ -46,7 +46,7 @@ export default function Hero() {
                             alt={'mask line'} />
                     </div>
 
-                    <div className="flex flex-col justify-between w-full pl-4">
+                    <div className="flex flex-col md:items-center justify-between w-full pl-4">
                         {/* button prev & next */}
                         <div className="flex items-center gap-2">
                             <Button

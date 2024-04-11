@@ -9,3 +9,16 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.hero-product {
+  background-image: url('../public/Rectangle.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+@media (max-width: 820px) {
+  .hero-product {
+    background-size: contain;
+  }
+}

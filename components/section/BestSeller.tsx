@@ -18,7 +18,7 @@ export default function BestSeller() {
                 colorText={'text-rose-700'}
                 isIcon={true}
             />
-            <div className="grid grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 px-8 md:px-6 xs:px-4">
+            <div className="grid grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4 px-8 md:px-6 xs:px-4">
                 {
                     filter.map((flower: any, index) =>
                         <Product data={flower} index={index} key={index} />

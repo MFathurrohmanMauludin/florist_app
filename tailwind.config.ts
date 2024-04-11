@@ -12,23 +12,19 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      // smart tv
       '2xl': { 'max': '1535px' },
-      // => @media (max-width: 1535px) { ... }
 
+      // laptop hd
       'xl': { 'max': '1279px' },
-      // => @media (max-width: 1279px) { ... }
+      'lg': { 'max': '1024px' },
 
-      'lg': { 'max': '1023px' },
-      // => @media (max-width: 1023px) { ... }
+      // ipad pro
+      'md': { 'max': '834px' },
 
-      'md': { 'max': '767px' },
-      // => @media (max-width: 767px) { ... }
-
+      // smartphone
       'sm': { 'max': '639px' },
-      // => @media (max-width: 639px) { ... }
-
       'xs': { 'max': '480px' },
-      // => @media (max-width: 480px) { ... }
     },
     extend: {
       dropShadow: {
