@@ -6,7 +6,7 @@ export default function ColorfulFlower() {
             <Heading
                 title={"Colorful Flower"}
                 icon={'fa'}
-                colorBorder={""}
+                colorBorder={"border-"}
                 colorBackground={""}
                 colorText={""}
                 isIcon={false}

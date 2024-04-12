@@ -1,3 +1,5 @@
+'use client';
+
 import { Card, CardFooter, Chip, Image, Link } from '@nextui-org/react';
 import AddToCart from '../button/AddToCart';
 import LikeButton from '../button/Like';
