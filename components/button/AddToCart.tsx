@@ -16,7 +16,7 @@ export default function BtnAddToCart() {
             radius='full'
             startContent={<FontAwesomeIcon icon={faCartArrowDown} fontSize={14} />}
         >
-            cart
+            add
         </Button>
     )
 }

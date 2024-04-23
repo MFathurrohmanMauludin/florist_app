@@ -26,8 +26,7 @@ function Product(getData: Props) {
                 className='flex justify-between'
                 shadow="sm"
                 key={getData.index}
-                onPress={() => console.log("item pressed")}
-                isPressable
+                isPressable={false}
             >
                 <Image
                     shadow="sm"

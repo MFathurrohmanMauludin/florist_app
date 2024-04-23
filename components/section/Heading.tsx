@@ -22,7 +22,7 @@ export default function Heading(getData: Props) {
                     getData.isIcon ?
                         <FontAwesomeIcon icon={icon[getData.icon]} fontSize={24} />
                         :
-                        <Image src={getData.icon} alt={getData.title} width={24} />
+                        <Image src={getData.icon} alt={getData.title} width={24} height={24} />
                 }
                 <span className='text-xl capitalize'>{getData.title}</span>
             </div>

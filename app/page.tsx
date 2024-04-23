@@ -3,6 +3,7 @@
 import Hero from "@/components/section/Hero";
 import BestSeller from "@/components/section/BestSeller";
 import Discount from "@/components/section/Discount";
+import ColorfulFlower from "@/components/section/ColorfulFlower";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <BestSeller />
       <Discount />
+      <ColorfulFlower />
     </main>
   );
 }
