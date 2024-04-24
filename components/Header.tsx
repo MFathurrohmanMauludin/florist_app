@@ -1,6 +1,7 @@
 import { Link } from '@nextui-org/link';
 import { Button } from '@nextui-org/react';
 import iconBuy from '../public/Buy.svg';
+import iconSearch from '../public/Search.svg';
 import iconHeart from '../public/Heart.svg';
 import iconProfile from '../public/Profile.svg';
 import Image from 'next/image';
@@ -9,16 +10,20 @@ export default function Header() {
     const linkData = ['home', 'shop', 'blog', 'about'];
     const pageData = [
         {
+            'page': 'search',
+            'icon': iconSearch
+        },
+        {
             'page': 'whishlist',
             'icon': iconHeart
         },
         {
-            'page': 'profile',
-            'icon': iconProfile
-        },
-        {
             'page': 'cart',
             'icon': iconBuy
+        },
+        {
+            'page': 'profile',
+            'icon': iconProfile
         },
     ];
 
@@ -29,7 +34,7 @@ export default function Header() {
                 <a href="#" className='text-lg'>Florist Go</a>
 
                 {/* nav-center */}
-                <div className="flex items-center xs:hidden gap-x-[48px]">
+                <div className="flex items-center xs:hidden md:hidden gap-x-[48px]">
                     {
                         linkData.map((data, index) =>
                             <Link
