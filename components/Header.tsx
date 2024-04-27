@@ -7,7 +7,7 @@ import iconProfile from '../public/Profile.svg';
 import Image from 'next/image';
 
 export default function Header() {
-    const linkData = ['home', 'shop', 'blog', 'about'];
+    const linkData = ['event', 'category', 'fertilizer', 'gifts', 'guide'];
     const pageData = [
         {
             'page': 'search',

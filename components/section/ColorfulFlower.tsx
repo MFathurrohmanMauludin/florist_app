@@ -13,6 +13,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "@nextui-org/link";
+import SeeMore from "../button/SeeMore";
 // import required modules
 
 export default function ColorfulFlower() {
@@ -79,15 +80,16 @@ export default function ColorfulFlower() {
                                     <Image className="object-cover rounded-[12px]" src={flower.img} width={270} height={300} loading="lazy" alt={flower.name} />
 
                                     <motion.div
-                                        className="absolute flex items-center justify-center w-full bg-gray-400/10 backdrop-blur-sm top-0 bottom-0 right-0 hover:"
+                                        className="absolute flex items-center justify-center w-full bg-gray-400/10 backdrop-blur-sm top-0 bottom-0 right-0 rounded-[12px]"
                                         initial={{ opacity: 0 }}
                                         whileHover={{ opacity: 1 }}
+                                        transition={{ type: 'spring' }}
                                     >
                                         <div className="flex flex-col items-center gap-x-4">
                                             <span className="text-[28px] capitalize text-white">{flower.name}</span>
-                                            <div className="flex flex-row gap-x-4 items-center w-[100px]">
+                                            <div className="flex flex-row gap-x-3 items-center w-[100px]">
                                                 <div className="flex grow h-[2px] bg-white rounded" />
-                                                <Link className="text-white" href=""></Link>
+                                                <Link className="text-white" href="#">view</Link>
                                                 <div className="flex grow h-[2px] bg-white rounded" />
                                             </div>
                                         </div>
@@ -98,6 +100,8 @@ export default function ColorfulFlower() {
                     }
                 </Swiper>
             </div>
+
+            <SeeMore url={"#"} />
         </>
     )
 }
