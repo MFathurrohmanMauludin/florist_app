@@ -7,7 +7,7 @@ import iconProfile from '../public/Profile.svg';
 import Image from 'next/image';
 
 export default function Header() {
-    const linkData = ['event', 'category', 'fertilizer', 'gifts', 'guide'];
+    const linkData = ['events', 'category', 'fertilizer', 'gifts', 'guide'];
     const pageData = [
         {
             'page': 'search',
@@ -31,7 +31,7 @@ export default function Header() {
         <>
             <div className="flex items-center justify-between px-8 py-5">
                 {/* logo */}
-                <a href="#" className='text-lg'>Florist Go</a>
+                <a href="/" className='text-lg'>Florist Go</a>
 
                 {/* nav-center */}
                 <div className="flex items-center xs:hidden md:hidden gap-x-[48px]">

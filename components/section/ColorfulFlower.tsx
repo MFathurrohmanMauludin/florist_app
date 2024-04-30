@@ -47,16 +47,17 @@ export default function ColorfulFlower() {
 
     return (
         <>
-            <Heading
-                title={"Colorful Flower"}
-                icon={'../flower-thin.svg'}
-                colorBorder={"border-teal-900"}
-                colorBackground={"bg-teal-800/30"}
-                colorText={"text-teal-700"}
-                isIcon={false}
-            />
 
-            <div className="my-6">
+            <div className="space-y-6 my-10">
+                <Heading
+                    title={"Colorful Flower"}
+                    icon={'../flower-thin.svg'}
+                    colorBorder={"border-teal-900"}
+                    colorBackground={"bg-teal-800/30"}
+                    colorText={"text-teal-700"}
+                    isIcon={false}
+                />
+
                 <Swiper
                     slidesPerView={5}
                     spaceBetween={16}
@@ -70,7 +71,7 @@ export default function ColorfulFlower() {
                     loop={true}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="!px-8 !py-4"
+                    className="!px-8"
                 >
                     {
                         data.map((flower, index) =>
@@ -99,9 +100,10 @@ export default function ColorfulFlower() {
                         )
                     }
                 </Swiper>
+
+                <SeeMore url={"#"} />
             </div>
 
-            <SeeMore url={"#"} />
         </>
     )
 }
