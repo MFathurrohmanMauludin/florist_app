@@ -15,7 +15,7 @@ export default function BestSeller() {
                 icon={'faFire'}
                 colorBorder={'border-rose-500'}
                 colorBackground={'bg-rose-300/60'}
-                colorText={'text-rose-700'}
+                colorText={'text-rose-900'}
                 isIcon={true}
             />
             <div className="grid grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 px-8 md:px-6 xs:px-4">

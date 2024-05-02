@@ -54,7 +54,7 @@ export default function ColorfulFlower() {
                     icon={'../flower-thin.svg'}
                     colorBorder={"border-teal-900"}
                     colorBackground={"bg-teal-800/30"}
-                    colorText={"text-teal-700"}
+                    colorText={"text-teal-800"}
                     isIcon={false}
                 />
 

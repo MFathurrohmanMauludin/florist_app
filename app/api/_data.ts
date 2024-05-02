@@ -112,6 +112,28 @@ const flowers = () => [
         discount: 15,
         category: ['pot', 'orchid', 'wedding'],
     },
-]
+];
+
+const users = () => [
+    {
+
+    },
+];
+
+const blogs = () => [
+    {
+        title: 'Best flowers for inside home',
+        image: 'https://source.unsplash.com/1200x760?google+place',
+        content: '',
+        author: {
+            name: 'hatsune miku',
+            thumbnail: 'https://source.unsplash.com/1200x760?google+place',
+        },
+        likes: '',
+        views: '',
+        followers: [],
+        createdAt: '',
+    },
+];
 
 export { flowers }

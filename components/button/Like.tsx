@@ -9,7 +9,7 @@ export default function LikeButton() {
 
     return (
         <Button
-            className={`capitalize text-gray-500 hover:!bg-white ${isLiked ? 'hover:text-rose-600' : 'text-rose-600'}`}
+            className={`capitalize text-gray-500 text-[14px] hover:!bg-white ${isLiked ? 'hover:text-rose-600' : 'text-rose-600'}`}
             variant='light'
             color='default'
             size='sm'

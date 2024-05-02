@@ -10,7 +10,7 @@ const Blog = () => {
                 icon={'faNewspaper'}
                 colorBorder={"border-purple-900"}
                 colorBackground={"bg-purple-800/30"}
-                colorText={"text-purple-700"}
+                colorText={"text-purple-800"}
                 isIcon={true}
             />
 
