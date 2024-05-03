@@ -15,10 +15,13 @@ export default function LikeButton() {
             size='sm'
             radius='full'
             onClick={() => setLiked(!isLiked)}
-            startContent={<FontAwesomeIcon icon={isLiked ? faHeart : faHeartSolid} fontSize={16} />}
+            startContent={
+                <div className='flex items-center gap-x-[6px]'>
+                    <FontAwesomeIcon icon={isLiked ? faHeart : faHeartSolid} fontSize={16} />
+                    <span className='leading-none'>124</span>
+                </div>
+            }
             aria-label='like button'
-        >
-            124
-        </Button>
+        />
     )
 }

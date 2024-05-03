@@ -36,11 +36,11 @@ function Product(getData: Props) {
                     src={getData.data.imgUrl}
                     width={500}
                 />
-                <CardFooter className="flex flex-col items-start text-left text-small xs:p-2">
+                <CardFooter className="flex flex-col items-start text-left xs:p-2">
                     <span className='line-clamp-1 text-lg font-medium capitalize'>{getData.data.title}
                     </span>
                     <div className="flex flex-col items-start gap-x-1">
-                        <div className="text-default-500">
+                        <div className="text-default-500 text-[16px]">
                             {
                                 getData.data.discount === 0 ?
                                     <>
@@ -54,7 +54,7 @@ function Product(getData: Props) {
                         </div>
                         {
                             getData.data.discount > 0 &&
-                            <div className='flex flex-row items-center gap-x-1'>
+                            <div className='flex flex-row items-center gap-x-1 text-small'>
                                 <del>${getData.data.size.small.price} - ${getData.data.size.large.price}</del>
                                 <Chip className='!bg-white text-red-600' size="sm">{getData.data.discount}%</Chip>
                             </div>

@@ -8,14 +8,17 @@ export default function CommentButton() {
         <Button
             as={Link}
             href='#'
-            className='capitalize text-gray-500 hover:!bg-white hover:text-gray-900'
+            className='capitalize text-gray-500 text-[14px] hover:!bg-white hover:text-gray-900'
             variant='light'
             color='default'
             size='sm'
             radius='full'
-            startContent={<FontAwesomeIcon icon={faComment} fontSize={16} />}
-        >
-            98
-        </Button>
+            startContent={
+                <div className='flex items-center gap-x-[6px]'>
+                    <FontAwesomeIcon icon={faComment} fontSize={16} />
+                    <span className='leading-none'>98</span>
+                </div>
+            }
+        />
     )
 }
