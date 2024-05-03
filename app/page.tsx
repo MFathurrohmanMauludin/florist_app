@@ -4,7 +4,8 @@ import Hero from "@/components/section/Hero";
 import BestSeller from "@/components/section/BestSeller";
 import Discount from "@/components/section/Discount";
 import ColorfulFlower from "@/components/section/ColorfulFlower";
-import Blog from "@/components/section/Blog";
+import LatestPost from "@/components/section/LatestPost";
+import Surprice from "@/components/section/Surprice";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <BestSeller />
       <Discount />
       <ColorfulFlower />
-      <Blog />
+      <LatestPost />
+      <Surprice />
     </main>
   );
 }
