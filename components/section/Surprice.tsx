@@ -8,7 +8,7 @@ export default function Surprice() {
                 {/* slogan */}
                 <div className="flex flex-col items-center justify-center text-center">
                     <span className='text-2xl '>Wedding</span>
-                    <span className='text-4xl font-semibold capitalize tracking-wide'>Berikan buket bunga yang terbaik dan terindah untuk pasangan hidup mu</span>
+                    <span className='text-4xl font-semibold capitalize tracking-wide'>Give the best and most beautiful flower bouquet to your beloved</span>
                 </div>
 
                 {/* image */}
