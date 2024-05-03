@@ -39,7 +39,7 @@ export default function Header() {
                         linkData.map((data, index) =>
                             <Link
                                 href={`/${data !== 'home' ? data : ''}`}
-                                className='capitalize text-[#51515199] hover:text-[#292929]'
+                                className='capitalize text-gray-600 hover:text-gray-800'
                                 size="md"
                                 color='primary'
                                 key={index}>
