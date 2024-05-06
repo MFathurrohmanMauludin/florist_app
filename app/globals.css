@@ -22,3 +22,19 @@
     background-size: contain;
   }
 }
+
+.line-color {
+  display: flex;
+  align-items: center;
+}
+
+.line-color::after,
+.line-color::before {
+  content: '';
+  background-color: rgb(255, 26, 26);
+  display: inline-block;
+  height: 4px;
+  width: 24px;
+  margin: 0 1rem;
+  border-radius: 4px;
+}
