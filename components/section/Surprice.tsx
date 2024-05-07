@@ -22,12 +22,13 @@ export default function Surprice() {
                 {/* slogan */}
                 <div className="flex flex-col relative items-center justify-center text-center">
                     <span
-                        className="flex items-center line-color"
+                        className="flex items-center text-2xl line-color"
                     >
                         Wedding
                     </span>
                     <span className="text-4xl font-semibold capitalize tracking-wide w-[calc(100%_-_50px)]">Give the best and most beautiful flower bouquet to your beloved</span>
-                    <Image className="absolute right-0 top-0 -z-[1]" src="https://i.ibb.co/6vnRzBS/cherry-blossom.png" width={300} height={100} alt='cherry-blossom' />
+                    <Image className="absolute right-0 top-0 -z-[1]" src="https://i.ibb.co/6vnRzBS/cherry-blossom.png" width={256} height={100} alt='cherry-blossom' />
+                    <Image className="absolute top-[60%] -z-[1]" src="https://i.ibb.co/2W5XcdN/couple-with-lovely-wedding-no-bg.png" width={400} height={100} alt='cherry-blossom' />
                 </div>
 
                 {/* image */}
