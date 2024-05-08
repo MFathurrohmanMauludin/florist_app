@@ -26,8 +26,9 @@ export default function Surprice() {
                 "https://img.freepik.com/premium-photo/portrait-woman-graduation-gown_1048944-20155993.jpg?w=500",
                 "https://img.freepik.com/premium-photo/girl-holding-bouquet_29207-167.jpg?w=740",
                 "https://img.freepik.com/premium-photo/businessman-hold-hiding-flower-bouquet-congratulation-young-woman-bachelor-s-degree-graduated_49071-4912.jpg?w=740",
+                "https://img.freepik.com/premium-photo/rear-view-photographer-photographing-woman-graduation-gown-against-trees_1048944-26805735.jpg?w=740",
             ],
-            slogan: 'Give the best and most beautiful flower bouquet to your beloved',
+            slogan: 'mari sambut orang terdekat kita dengan keindahan bunga',
             url: '',
         },
 
