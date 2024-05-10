@@ -6,6 +6,7 @@ import Discount from "@/components/section/Discount";
 import ColorfulFlower from "@/components/section/ColorfulFlower";
 import LatestPost from "@/components/section/LatestPost";
 import Surprice from "@/components/section/Surprice";
+import Testimonial from "@/components/section/Testimonial";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ColorfulFlower />
       <LatestPost />
       <Surprice />
+      <Testimonial />
     </main>
   );
 }
